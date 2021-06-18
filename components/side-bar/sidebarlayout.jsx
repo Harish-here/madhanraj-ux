@@ -39,7 +39,6 @@ function SideBarLayout(props) {
             </Link>
           </div>
           <hr className="mb-2" />
-          <div className="text-sm mb-2">Ux Products</div>
           <ul>
             {menuData?.map(({ label, path, subMenus }) => (
               <li className="mb-4" key={label}>
