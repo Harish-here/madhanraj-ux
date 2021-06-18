@@ -30,7 +30,7 @@ function SideBarLayout(props) {
         {/* Menu */}
         <div className={`flex flex-col justify-start ${style.menu}`}>
           <div
-            className={`mb-2 transition-all ${
+            className={`mb-4 transition-all ${
               isCurrentRoute("/") ? activeMenuClass : ""
             }`}
           >
@@ -38,7 +38,6 @@ function SideBarLayout(props) {
               <a>Home</a>
             </Link>
           </div>
-          <hr className="mb-2" />
           <ul>
             {menuData?.map(({ label, path, subMenus }) => (
               <li className="mb-4" key={label}>
