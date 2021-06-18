@@ -1,4 +1,4 @@
-export default {
+const pageMeta = {
   "visual-designs": {
     title: "Visual Designs",
     description: "",
@@ -20,3 +20,4 @@ export default {
     description: "",
   },
 };
+export default pageMeta;
