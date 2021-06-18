@@ -33,7 +33,7 @@ export default function SideBarLayout(props) {
           <div className="text-sm mb-2">Ux Products</div>
           <ul>
             {menuData?.map(({ label, path }) => (
-              <li className="mb-4">
+              <li className="mb-4" key={label}>
                 <Link href={path}>
                   <a>{label}</a>
                 </Link>
