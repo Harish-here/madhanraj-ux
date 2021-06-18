@@ -1,0 +1,26 @@
+.avatar {
+  width: 107px;
+  height: 107px;
+  object-fit: contain;
+  mix-blend-mode: luminosity;
+  border: 11px solid;
+  border-radius: 54px;
+  border-color: var(--yellow);
+}
+.menu {
+  height: 470px;
+  color: var(--gray-shade-3);
+}
+.behance-logo {
+  height: 20px;
+  width: 20px;
+}
+
+.linkedin-logo {
+  height: 15px;
+  width: 15px;
+}
+
+.footer {
+  color: var(--gray-shade-3);
+}
