@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="105" viewBox="0 0 105 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #eaeaea;
+      }
+
+      .cls-4 {
+        font-size: 18px;
+        font-family: Pacifico-Regular, Pacifico;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.974" y1="0.031" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3abbeb"/>
+      <stop offset="0.428" stop-color="#4788e6"/>
+      <stop offset="1" stop-color="#535be2"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_886" data-name="Group 886" transform="translate(-3023 -1075)">
+    <rect id="Rectangle_259" data-name="Rectangle 259" class="cls-1" width="105" height="105" rx="12" transform="translate(3023 1075)"/>
+    <g id="lightning" transform="translate(3065.404 1088.729) rotate(8)">
+      <path id="Path_22803" data-name="Path 22803" class="cls-2" d="M10.269,43.924,27.3,14.6a.923.923,0,0,0-.922-1.378L15.049,14.76,17.756.55a.461.461,0,0,0-.821-.365L.19,22.289a.923.923,0,0,0,.832,1.475l12.49-1.315L9.417,43.6A.461.461,0,0,0,10.269,43.924Z" transform="translate(0 0)"/>
+      <path id="Path_22804" data-name="Path 22804" class="cls-3" d="M5.426,20.721a.382.382,0,0,1-.354-.583L17.592.106a.455.455,0,0,0-.657.078L.19,22.288a.923.923,0,0,0,.832,1.475l12.49-1.315L9.417,43.6a.448.448,0,0,0,.362.534l7.016-22.2a1.538,1.538,0,0,0-1.589-2Z" transform="translate(0 0.001)"/>
+    </g>
+    <text id="See_my_id" data-name="See my id" class="cls-4" transform="translate(3038 1158)"><tspan x="0" y="0">See my id</tspan></text>
+  </g>
+</svg>
