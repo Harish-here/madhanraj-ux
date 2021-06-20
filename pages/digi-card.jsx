@@ -48,11 +48,7 @@ export default function DigiCard() {
         <div className="w-auto flex justify-center">
           <div className="flex flex-wrap">
             {userBehaviourCard?.map(({ src, description }) => (
-              <ImageCard
-                key={src}
-                src={`/../public/${src}`}
-                description={description}
-              />
+              <ImageCard key={src} src={src} description={description} />
             ))}
           </div>
         </div>
