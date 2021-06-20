@@ -29,8 +29,8 @@ export default function DigiCard() {
             </div>
           </div>
           <div className="ml-20">
-            <div className="heading font-30">Problem Statement</div>
-            <p className="mt-6 font-20">
+            <div className="heading font-30 mb-6">Problem Statement</div>
+            <p className="font-20">
               very small Business people couldn’t able to share their products &
               services to new customers its hard for their users to explain
               about their products
