@@ -5,12 +5,13 @@
   mix-blend-mode: luminosity;
   border: 11px solid;
   border-radius: 54px;
-  border-color: var(--pale-blue);
+  border-color: var(--yellow);
 }
 
 .menu {
   height: 470px;
-  color: var(--gray-shade-3);
+  color: var(--pale-blue);
+  overflow-y: auto;
 }
 .menu-active {
   color: var(--black);

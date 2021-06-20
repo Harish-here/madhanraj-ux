@@ -1,0 +1,67 @@
+#digi-card-page {
+  section {
+    margin-bottom: 30px;
+  }
+  .page-heading {
+    font-size: 40px;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 900;
+  }
+  .page-banner-container {
+    padding: 160px 130px;
+    p {
+      width: 580px;
+    }
+  }
+  .seemyid-logo {
+    width: 105px;
+    height: 105px;
+  }
+  #concept-model {
+    .image-card {
+      border: none;
+      height: 275px;
+      margin: 0 50px 50px 0;
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+  #sales-section {
+    .sub-heading {
+      font-size: 21px;
+      font-weight: 500;
+      div {
+        padding: 10px 0px;
+        text-align: center;
+      }
+    }
+    .sales-person {
+      border: 1px solid #d3d0d0;
+      padding: 20px;
+      border-radius: 4px;
+      .image-card {
+        border: none;
+        text-align: center;
+        p {
+          font-size: 21px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  #thank-you {
+    background-color: var(--gray-shade-1);
+    margin-bottom: 0;
+    > div {
+      height: 122px;
+    }
+    .thankyou-text {
+      color: var(--pale-blue);
+    }
+  }
+}

@@ -1,4 +1,5 @@
 const menuData = [
+  { label: "Home", path: "/" },
   {
     label: "Digital Card",
     path: "/digi-card",
