@@ -24,7 +24,7 @@ body {
 
 #side-bar {
   flex: 0 0 22%;
-  background-color: rgb(219 235 253 / 8%);
+  background-color: #f8f8f8;
 }
 #main-page {
   flex: 1;

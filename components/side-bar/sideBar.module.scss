@@ -2,10 +2,12 @@
   width: 107px;
   height: 107px;
   object-fit: contain;
-  mix-blend-mode: luminosity;
   border: 11px solid;
   border-radius: 54px;
   border-color: var(--yellow);
+  img {
+    mix-blend-mode: luminosity;
+  }
 }
 
 .menu {
