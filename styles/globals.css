@@ -31,7 +31,7 @@ body {
 }
 /* bg utility */
 .bg-yellow {
-  background-color: var(--yellow);
+  background-color: #f8e837;
 }
 /* font utility */
 .font-20 {
