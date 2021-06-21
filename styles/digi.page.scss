@@ -21,10 +21,11 @@
   #concept-model {
     .image-card {
       border: none;
-      height: 275px;
+      width: 280px;
+      height: 250px;
       margin: 0 50px 50px 0;
       p {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         margin-top: 10px;
         text-align: center;
@@ -42,7 +43,7 @@
     }
     .sales-person {
       border: 1px solid #d3d0d0;
-      padding: 20px;
+      padding: 10px;
       border-radius: 4px;
       .image-card {
         border: none;

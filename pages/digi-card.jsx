@@ -20,7 +20,7 @@ export default function DigiCard() {
   return (
     <div
       id="digi-card-page"
-      className="flex flex-col items-stretch  w-full h-screen overflow-y-scroll px-4"
+      className="flex flex-col items-stretch  w-full h-screen overflow-y-scroll px-10"
     >
       <section>
         <div className="page-heading">Digital Business Card</div>
@@ -57,8 +57,8 @@ export default function DigiCard() {
       </section>
       {/* persona */}
       <section>
-        <div className="font-30 mb-6">Personna</div>
-        <div>
+        <div className="font-30 mb-6">Persona</div>
+        <div className="flex justify-start">
           <Image src={Personna} alt="" />
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function DigiCard() {
         </div>
         <div className="font-28 mb-6">Part time sales persons</div>
         <div className="sales-person mb-6">
-          <div className="flex mt-3">
+          <div className="flex mt-3 justify-center">
             {salesPersonCard?.map(({ src, description }) => (
               <ImageCard key={src} src={`${src}`} description={description} />
             ))}
@@ -119,7 +119,8 @@ export default function DigiCard() {
       <section>
         <div className="font-30 font-bold mb-10">UX on marketing</div>
         <div className="font-22 mb-6">
-          Utlizing <span className="bg-yellow">PERIPHERAL</span> VISION
+          Utlizing <span className="bg-yellow p-1 rounded">PERIPHERAL</span>{" "}
+          VISION
         </div>
         <div className="mb-20">
           <Image src={MarketingBanner} alt="" />
