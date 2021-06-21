@@ -11,8 +11,10 @@ import {
 } from "../constants/pages/digi-card/data";
 import Personna from "../public/digi-card/personna.webp";
 import ConceptBoard from "../public/digi-card/concept_board.webp";
-import MarketingGroup from "../public/digi-card/marketing_group.webp";
+import MarketingGroup from "../public/digi-card/marketing/marketing_group.webp";
+import MarketingBanner from "../public/digi-card/marketing/marketing_banner.webp";
 import ThumbsUp from "../public/digi-card/thumbs-up.svg";
+import SalesExample from "../public/digi-card/sales/example.webp";
 
 export default function DigiCard() {
   return (
@@ -104,7 +106,11 @@ export default function DigiCard() {
             ))}
           </div>
         </div>
-        <div className="font-20">
+        <div className="font-28 mb-6">For example</div>
+        <div className="px-10 mb-10">
+          <Image src={SalesExample} width="937" height="280" alt="" />
+        </div>
+        <div className="font-20 mb-6">
           If a salesman sale one product to a customer for 350/- he will get
           100rs as remuneration
         </div>
@@ -112,10 +118,13 @@ export default function DigiCard() {
       {/* marketing section */}
       <section>
         <div className="font-30 font-bold mb-10">UX on marketing</div>
-        <div className="font-22">
+        <div className="font-22 mb-6">
           Utlizing <span className="bg-yellow">PERIPHERAL</span> VISION
         </div>
-        <div>
+        <div className="mb-20">
+          <Image src={MarketingBanner} alt="" />
+        </div>
+        <div className="mb-10">
           <Image src={MarketingGroup} alt="" />
         </div>
       </section>
