@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SeeMyIdLogo from "../public/digi-card/seemyid_logo.svg";
 import ImageCard from "../components/image-card";
+import ThankYou from "../components/thank-you";
 import {
   userBehaviourCard,
   conceptCard,
@@ -13,14 +14,14 @@ import Personna from "../public/digi-card/personna.webp";
 import ConceptBoard from "../public/digi-card/concept_board.webp";
 import MarketingGroup from "../public/digi-card/marketing/marketing_group.webp";
 import MarketingBanner from "../public/digi-card/marketing/marketing_banner.webp";
-import ThumbsUp from "../public/digi-card/thumbs-up.svg";
+// import ThumbsUp from "../public/digi-card/thumbs-up.svg";
 import SalesExample from "../public/digi-card/sales/example.webp";
 
 export default function DigiCard() {
   return (
     <div
       id="digi-card-page"
-      className="flex flex-col items-stretch  w-full h-screen overflow-y-scroll px-10"
+      className="flex flex-col items-stretch  w-full h-screen px-10"
     >
       <section>
         <div className="page-heading">Digital Business Card</div>
@@ -151,14 +152,7 @@ export default function DigiCard() {
           ))}
         </div>
       </section>
-      <section id="thank-you" className="mt-10 flex ">
-        <div className="flex items-center justify-center w-full">
-          <div className="font-30 thankyou-text">Thank you</div>
-          <div className="ml-4">
-            <Image width="27" height="30" src={ThumbsUp} alt="" />
-          </div>
-        </div>
-      </section>
+      <ThankYou />
     </div>
   );
 }
