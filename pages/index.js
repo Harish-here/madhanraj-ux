@@ -4,8 +4,8 @@ import HomeHeading from "../public/home/home_heading.webp";
 export default function Home() {
   return (
     <div id="home" className="flex items-center justify-center w-full h-screen">
-      <div className="flex flex-col">
-        <div className="flex justify-center mb-20">
+      <div className="flex flex-col justify-between h-full">
+        <div className="flex justify-center pt-4 mt-10">
           <Image
             width="611"
             height="101"
