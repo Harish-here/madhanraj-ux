@@ -59,6 +59,7 @@ body {
   padding: 20px 30px;
   margin: 0 20px 20px 0;
   border-radius: 8px;
+  background-color: #fff;
 }
 .image-card .image-contanier {
   flex: 0 0 75%;
@@ -71,7 +72,7 @@ body {
   font-weight: 500;
 }
 
-#home {
+#main-page {
   background: url(../public//home/home_bg.webp) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
