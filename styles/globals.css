@@ -42,6 +42,10 @@ body {
   font-size: 30px;
   font-weight: 900;
 }
+.font-40 {
+  font-size: 40px;
+  font-weight: 900;
+}
 .font-28 {
   font-size: 28px;
   font-weight: bold;
@@ -71,6 +75,18 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+#thank-you {
+  background-color: var(--gray-shade-1);
+  margin-bottom: 0;
+}
+#thank-you > div {
+  height: 122px;
+}
+#thank-you .thankyou-text {
+  color: var(--pale-blue);
+}
+
+/* section */
 
 #home {
   background: url(../public//home/home_bg.webp) no-repeat center center fixed;
@@ -78,4 +94,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#mobile-stamp {
+  color: var(--black);
+}
+#mobile-stamp section {
+  margin-bottom: 40px;
+}
+#mobile-stamp p,
+#mobile-stamp li {
+  font-size: 20px;
+}
+#mobile-stamp li {
+  list-style-type: disc;
 }

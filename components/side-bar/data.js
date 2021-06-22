@@ -13,10 +13,10 @@ const menuData = [
       { label: "Wireframe", path: "/digi-card#wireframe" },
     ],
   },
+  { label: "Mobile Stamp", path: "/mobile-stamp" },
   { label: "Chat Product", path: "/chat-product" },
   { label: "Ellie Chat bot", path: "/ellie-chat-bot" },
   { label: "Visual Designs", path: "/visual-designs" },
-  { label: "Crazy Ideas", path: "/crazy-ideas" },
 ];
 const profileDescription = `
 It’s my mission to create intuitive designs from concept to

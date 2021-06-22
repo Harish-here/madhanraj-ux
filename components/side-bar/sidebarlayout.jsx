@@ -33,7 +33,7 @@ function SideBarLayout(props) {
             {menuData?.map(({ label, path, subMenus }) => (
               <li className="mb-4" key={label}>
                 <div className="flex justify-between">
-                  <Link c href={path} prefetch={true}>
+                  <Link href={path}>
                     <a
                       className={`transition-all ${
                         isCurrentRoute(path) ? activeMenuClass : ""
