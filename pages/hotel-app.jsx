@@ -3,6 +3,7 @@ import OpeningBanner from "../public/hotel-app/opening_banner.webp";
 import Marketing from "../public/hotel-app/marketing.webp";
 import JourneyMap from "../public/hotel-app/journey_map.webp";
 import { wireframeImgs } from "../constants/pages/hotel-app/data";
+import ThankYou from "../components/thank-you";
 export default function HotelApp() {
   return (
     <div id="hotel-app" className="flex flex-col w-full h-screen px-10">
@@ -88,6 +89,7 @@ export default function HotelApp() {
           ))}
         </div>
       </section>
+      <ThankYou />
     </div>
   );
 }
