@@ -51,7 +51,12 @@ export default function DigiCard() {
         <div className="w-auto flex justify-center">
           <div className="flex flex-wrap">
             {userBehaviourCard?.map(({ src, description }) => (
-              <ImageCard key={src} src={src} description={description} />
+              <ImageCard
+                className="mr-6 mb-6"
+                key={src}
+                src={src}
+                description={description}
+              />
             ))}
           </div>
         </div>
@@ -76,7 +81,12 @@ export default function DigiCard() {
         <div className="w-auto flex justify-center">
           <div className="flex flex-wrap">
             {conceptCard?.map(({ src, description }) => (
-              <ImageCard key={src} src={`${src}`} description={description} />
+              <ImageCard
+                className="mr-6 mb-6"
+                key={src}
+                src={`${src}`}
+                description={description}
+              />
             ))}
           </div>
         </div>
@@ -86,7 +96,12 @@ export default function DigiCard() {
         <div className="w-auto flex mb-10 ">
           <div className="flex flex-wrap mt-3">
             {conceptCard2?.map(({ src, description }) => (
-              <ImageCard key={src} src={`${src}`} description={description} />
+              <ImageCard
+                className="mr-6 mb-6"
+                key={src}
+                src={`${src}`}
+                description={description}
+              />
             ))}
           </div>
         </div>
@@ -131,12 +146,12 @@ export default function DigiCard() {
         </div>
       </section>
       {/* paper sketch */}
-      <section className="mb-20">
+      <section id="paper-sketch" className="mb-20">
         <div className="font-30 font-bold mb-10">Paper Sketch</div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-around ">
           {paperSketchImgs?.map((src) => (
-            <div className="mr-10 mb-10" key={src}>
-              <Image src={src} width="306" height="535" alt="" />
+            <div className="image-wrapper" key={src}>
+              <Image src={src} layout="fill" alt="" />
             </div>
           ))}
         </div>
@@ -144,10 +159,10 @@ export default function DigiCard() {
       {/* wireframe */}
       <section id="wireframes">
         <div className="font-30 font-bold mb-6">Wireframes</div>
-        <div className="flex flex-wrap image-wrapper">
+        <div className="flex flex-wrap ">
           {wireframeImgs?.map((src) => (
-            <div className="mr-10 mb-10" key={src}>
-              <Image src={src} width="306" height="662" alt="" />
+            <div className="image-wrapper" key={src}>
+              <Image src={src} layout="fill" alt="" />
             </div>
           ))}
         </div>
