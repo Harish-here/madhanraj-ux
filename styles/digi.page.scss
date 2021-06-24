@@ -18,18 +18,22 @@
     width: 105px;
     height: 105px;
   }
+  #user-behaviour {
+    .image-card {
+      flex: 0 0 30%;
+    }
+  }
   #concept-model {
     .image-card {
-      border-radius: 20px;
-      border: none;
-      width: 280px;
-      height: 250px;
-      margin: 0 50px 50px 0;
+      width: auto;
+      flex: 0 0 30%;
+      height: 320px;
+      padding: 2.25rem;
       p {
         font-size: 16px;
         font-weight: 500;
         margin-top: 10px;
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -55,6 +59,17 @@
           font-weight: 500;
         }
       }
+    }
+  }
+
+  #paper-sketch,
+  #wireframes {
+    .image-wrapper {
+      flex: 0 0 30%;
+      height: 662px;
+      position: relative;
+      margin-bottom: 1.25rem;
+      margin-right: 1.25rem;
     }
   }
 }
