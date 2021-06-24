@@ -18,7 +18,7 @@ const menuData = [
   { label: "Toucan", path: "/toucan" },
   { label: "Ellie Chat bot", path: "/ellie-chat-bot" },
   { label: "Chat Product", path: "/chat-product" },
-  { label: "Visual Designs", path: "/visual-designs" },
+  { label: "Expense App", path: "/visual-designs" },
 ];
 const profileDescription = `
 It’s my mission to create intuitive designs from concept to
