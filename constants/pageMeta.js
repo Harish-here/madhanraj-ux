@@ -19,5 +19,17 @@ const pageMeta = {
     title: "Digi Card",
     description: "",
   },
+  toucan: {
+    title: "Toucan",
+    description: "",
+  },
+  "hotel-app": {
+    title: "Hotel Booking App",
+    description: "",
+  },
+  "mobile-stamp": {
+    title: "Mobile Stamp",
+    description: "",
+  },
 };
 export default pageMeta;

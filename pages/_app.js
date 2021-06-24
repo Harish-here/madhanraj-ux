@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps, router }) {
           Madhanraj UX - {meta?.[router?.route.replace("/", "")]?.title}{" "}
         </title>
         <meta name="description" content="Enjoy the Journey" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
       <SideBarLayout>
         <Component {...pageProps} />
