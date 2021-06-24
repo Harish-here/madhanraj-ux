@@ -15,8 +15,9 @@ const menuData = [
   },
   { label: "Mobile Stamp", path: "/mobile-stamp" },
   { label: "Hotel Booking App", path: "/hotel-app" },
-  { label: "Chat Product", path: "/chat-product" },
+  { label: "Toucan", path: "/toucan" },
   { label: "Ellie Chat bot", path: "/ellie-chat-bot" },
+  { label: "Chat Product", path: "/chat-product" },
   { label: "Visual Designs", path: "/visual-designs" },
 ];
 const profileDescription = `
