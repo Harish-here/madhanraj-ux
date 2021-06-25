@@ -104,7 +104,13 @@ function SideBarLayout(props) {
               <Image src={behance} alt="Behance logo" />
             </div>
             <div className={`${style?.["linkedin-logo"]} ml-2`}>
-              <Image src={linkedin} alt="LinkedIn logo" />
+              <a
+                href="https://www.linkedin.com/in/madhan-raj-035317a6/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Image src={linkedin} alt="LinkedIn logo" />
+              </a>
             </div>
           </div>
         </div>
