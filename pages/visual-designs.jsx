@@ -6,7 +6,7 @@ export default function VisualDesigns() {
         title="Inline Frame Example"
         width="960"
         height="650"
-        src="https://burrata.invisionapp.com/console/share/UA2FAWSLTJ/587963387"
+        src="https://burrata.invisionapp.com/console/share/UA2FAWSLTJ/678327646"
       ></iframe>
     </div>
   );

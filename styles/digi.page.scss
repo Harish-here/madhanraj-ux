@@ -62,12 +62,16 @@
     }
   }
 
-  #paper-sketch,
+  #paper-sketch {
+    .img-box {
+      flex: 0 0 30%;
+      margin-bottom: 1.25rem;
+      margin-right: 1.25rem;
+    }
+  }
   #wireframes {
-    .image-wrapper {
-      width: 324px;
-      height: 662px;
-      position: relative;
+    .img-box {
+      flex: 0 0 30%;
       margin-bottom: 1.25rem;
       margin-right: 1.25rem;
     }

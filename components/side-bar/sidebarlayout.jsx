@@ -101,7 +101,13 @@ function SideBarLayout(props) {
           </div>
           <div className="flex items-baseline">
             <div className={style?.["behance-logo"]}>
-              <Image src={behance} alt="Behance logo" />
+              <a
+                href="https://www.behance.net/madhanrajUX"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Image src={behance} alt="Behance logo" />
+              </a>
             </div>
             <div className={`${style?.["linkedin-logo"]} ml-2`}>
               <a

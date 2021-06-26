@@ -4,16 +4,22 @@ import Marketing from "../public/hotel-app/marketing.webp";
 import JourneyMap from "../public/hotel-app/journey_map.webp";
 import { wireframeImgs } from "../constants/pages/hotel-app/data";
 import ThankYou from "../components/thank-you";
+import ImgBox from "../components/img-box";
 export default function HotelApp() {
   return (
     <div id="hotel-app" className="flex flex-col w-full h-screen px-10">
       <h1 className="font-40 text-center my-10 p-4">
         Hotel Booking App for B2B
       </h1>
-      <section>
+      <section id="opening">
         <div className="font-30 mb-6">Goal</div>
+        <div className="font-20 mb-6">
+          To design a hotel room booking application for B2B organisation, where
+          its Employee policy, Approval management system has to be done in a
+          single place.{" "}
+        </div>
         <div className="flex justify-center">
-          <Image src={OpeningBanner} alt="" width="600px" height="324" />
+          <ImgBox src={OpeningBanner} aspectRatio={Number(1.3662)} />
         </div>
       </section>
       <section>
@@ -69,23 +75,21 @@ export default function HotelApp() {
       </section>
       <section>
         <div className="font-30 mb-6">Persona</div>
-        <div className="relative ">
-          <Image width="960" height="1600" src={Marketing} alt="" />
+        <div className="relative w-full">
+          <ImgBox aspectRatio={Number(0.6)} src={Marketing} />
         </div>
       </section>
       <section>
         <div className="font-30 mb-6">Journey Map</div>
-        <div className="relative flex">
-          <Image width="960" height="451" src={JourneyMap} alt="" />
+        <div className="relative w-full">
+          <ImgBox aspectRatio={Number(2.1286)} src={JourneyMap} />
         </div>
       </section>
       <section>
         <div className="font-30 mb-6">High fidelity Wireframe</div>
         <div className="flex flex-wrap justify-evenly">
           {wireframeImgs?.map((src) => (
-            <div className="image-wrapper relative" key={src}>
-              <Image src={src} layout="fill" alt="" />
-            </div>
+            <ImgBox key={src} src={src} aspectRatio={Number(1.3662)} />
           ))}
         </div>
       </section>
