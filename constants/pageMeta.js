@@ -31,5 +31,9 @@ const pageMeta = {
     title: "Mobile Stamp",
     description: "",
   },
+  home: {
+    title: "Enjoy the Journey",
+    description: "",
+  },
 };
 export default pageMeta;
