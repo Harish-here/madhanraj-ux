@@ -10,11 +10,11 @@ import {
   paperSketchImgs,
   wireframeImgs,
 } from "../constants/pages/digi-card/data";
+import ImgBox from "../components/img-box";
 import Personna from "../public/digi-card/personna.webp";
 import ConceptBoard from "../public/digi-card/concept_board.webp";
 import MarketingGroup from "../public/digi-card/marketing/marketing_group.webp";
 import MarketingBanner from "../public/digi-card/marketing/marketing_banner.webp";
-// import ThumbsUp from "../public/digi-card/thumbs-up.svg";
 import SalesExample from "../public/digi-card/sales/example.webp";
 
 export default function DigiCard() {
@@ -150,9 +150,7 @@ export default function DigiCard() {
         <div className="font-30 font-bold mb-10">Paper Sketch</div>
         <div className="flex flex-wrap justify-around ">
           {paperSketchImgs?.map((src) => (
-            <div className="image-wrapper" key={src}>
-              <Image src={src} layout="fill" alt="" />
-            </div>
+            <ImgBox key={src} src={src} aspectRatio={Number(0.56822)} />
           ))}
         </div>
       </section>
@@ -161,9 +159,7 @@ export default function DigiCard() {
         <div className="font-30 font-bold mb-6">Wireframes</div>
         <div className="flex flex-wrap ">
           {wireframeImgs?.map((src) => (
-            <div className="image-wrapper" key={src}>
-              <Image src={src} layout="fill" alt="" />
-            </div>
+            <ImgBox key={src} src={src} aspectRatio={Number(0.46223)} />
           ))}
         </div>
       </section>

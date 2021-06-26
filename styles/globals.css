@@ -116,8 +116,14 @@ body {
   margin-bottom: 3rem;
 }
 #hotel-app .image-wrapper {
-  flex: 0 0 49%;
-  height: 344px;
+  width: 488px;
+  height: 363px;
   margin-bottom: 0.625rem;
   padding: 0.0625rem;
+}
+#hotel-app .img-box {
+  flex: 0 0 49%;
+}
+#holel-app #opening .img-box {
+  flex: 0 0 50%;
 }
