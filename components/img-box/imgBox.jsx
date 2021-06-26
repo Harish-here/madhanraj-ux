@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 
 export default function ImgBox(props) {
   const { aspectRatio, src, minHeight, key = "" } = props;
-  const [resultantHeight, setResultantHeight] = useState(minHeight || 350);
+  const [resultantHeight, setResultantHeight] = useState(minHeight || 0);
   const imageRef = useRef();
   const onResize = () => {
     const width = imageRef.current.offsetWidth;

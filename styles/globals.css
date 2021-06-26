@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900;1,400&display=swap");
+
 :root {
   --gray-shade-1: #eef3f9;
   --gray-shade-2: #d2ddec;
