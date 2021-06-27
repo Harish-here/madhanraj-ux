@@ -1,7 +1,7 @@
 export default function VisualDesigns() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen">
-      <div className="font-30 mb-8">Prototype</div>
+      <div className="font-30 mb-8">Expense App Wireframe - Prototype</div>
       <iframe
         id="inlineFrameExample"
         title="Inline Frame Example"
