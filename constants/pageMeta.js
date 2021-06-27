@@ -11,8 +11,8 @@ const pageMeta = {
     title: "Ellie Chat Bot",
     description: "",
   },
-  "chat-product": {
-    title: "Chat Product",
+  "old-brain": {
+    title: "Old Brain Working",
     description: "",
   },
   "digi-card": {

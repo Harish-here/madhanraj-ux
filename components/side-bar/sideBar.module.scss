@@ -1,13 +1,8 @@
 .avatar {
-  width: 107px;
-  height: 107px;
+  width: 129px;
+  height: 129px;
   object-fit: contain;
-  border: 11px solid;
   border-radius: 54px;
-  border-color: var(--yellow);
-  img {
-    mix-blend-mode: luminosity;
-  }
 }
 
 .menu {

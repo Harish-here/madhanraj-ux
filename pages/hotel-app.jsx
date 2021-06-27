@@ -1,5 +1,4 @@
-import Image from "next/image";
-import OpeningBanner from "../public/hotel-app/opening_banner.webp";
+import OpeningBanner from "../public/hotel-app/wireframe/image_9.webp";
 import Marketing from "../public/hotel-app/marketing.webp";
 import JourneyMap from "../public/hotel-app/journey_map.webp";
 import { wireframeImgs } from "../constants/pages/hotel-app/data";
@@ -19,7 +18,7 @@ export default function HotelApp() {
           single place.{" "}
         </div>
         <div className="flex justify-center">
-          <ImgBox src={OpeningBanner} aspectRatio={Number(1.3662)} />
+          <ImgBox src={OpeningBanner} aspectRatio={Number(1.3468)} />
         </div>
       </section>
       <section>
@@ -89,7 +88,7 @@ export default function HotelApp() {
         <div className="font-30 mb-6">High fidelity Wireframe</div>
         <div className="flex flex-wrap justify-evenly">
           {wireframeImgs?.map((src) => (
-            <ImgBox key={src} src={src} aspectRatio={Number(1.3662)} />
+            <ImgBox key={src} src={src} aspectRatio={Number(1.3468)} />
           ))}
         </div>
       </section>

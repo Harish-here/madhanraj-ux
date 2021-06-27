@@ -32,7 +32,13 @@ export default function DigiCard() {
             </div>
           </div>
           <div className="ml-20">
-            <div className="heading font-30 mb-6">Problem Statement</div>
+            <div className="heading font-30 mb-6">
+              <a aria-hidden="true" tabIndex="-1" id="problemStatement"></a>
+              Problem Statement
+              <a href="#problemStatement" className="ml-2 hash-link">
+                #
+              </a>
+            </div>
             <p className="font-20">
               very small Business people couldn’t able to share their products &
               services to new customers its hard for their users to explain
@@ -47,7 +53,13 @@ export default function DigiCard() {
       </section>
       {/* Observation section */}
       <section id="user-behaviour">
-        <div className="font-30 mb-6">Observing User behaviour</div>
+        <div className="font-30 mb-6">
+          <a aria-hidden="true" tabIndex="-1" id="userBehaviour"></a>
+          Observing User behaviour
+          <a href="#userBehaviour" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div className="w-auto flex justify-center">
           <div className="flex flex-wrap">
             {userBehaviourCard?.map(({ src, description }) => (
@@ -63,20 +75,38 @@ export default function DigiCard() {
       </section>
       {/* persona */}
       <section>
-        <div className="font-30 mb-6">Persona</div>
+        <div className="font-30 mb-6">
+          <a aria-hidden="true" tabIndex="-1" id="persona"></a>
+          Persona
+          <a href="#persona" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div className="flex justify-start">
           <Image src={Personna} alt="" />
         </div>
       </section>
       <section>
-        <div className="font-30 mb-6">Root Cause Analysis - 5 why’s</div>
+        <div className="font-30 mb-6">
+          <a aria-hidden="true" tabIndex="-1" id="rootCause"></a>
+          Root Cause Analysis - 5 why’s
+          <a href="#rootCause" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div>
           <Image src={ConceptBoard} alt="" />
         </div>
       </section>
       {/* concept section */}
       <section id="concept-model">
-        <div className="font-30 mb-6">Conceptual Model </div>
+        <div className="font-30 mb-6">
+          <a aria-hidden="true" tabIndex="-1" id="conceptualModel"></a>
+          Conceptual Model
+          <a href="#conceptualModel" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div className="font-28 font-bold mb-6">1st level solution</div>
         <div className="w-auto flex justify-center">
           <div className="flex flex-wrap">
@@ -106,6 +136,27 @@ export default function DigiCard() {
           </div>
         </div>
       </section>
+
+      {/* marketing section */}
+      <section>
+        <div className="font-30 font-bold mb-10">
+          <a aria-hidden="true" tabIndex="-1" id="marketingTechnique"></a>
+          UX on marketing
+          <a href="#marketingTechnique" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
+        <div className="font-22 mb-6">
+          Utlizing <span className="bg-yellow p-1 rounded">PERIPHERAL</span>{" "}
+          VISION
+        </div>
+        <div className="mb-20">
+          <Image src={MarketingBanner} alt="" />
+        </div>
+        <div className="mb-10">
+          <Image src={MarketingGroup} alt="" />
+        </div>
+      </section>
       {/* sales section */}
       <section id="sales-section">
         <div className="font-30 font-bold mb-6">Sales Technique</div>
@@ -131,23 +182,15 @@ export default function DigiCard() {
           100rs as remuneration
         </div>
       </section>
-      {/* marketing section */}
-      <section>
-        <div className="font-30 font-bold mb-10">UX on marketing</div>
-        <div className="font-22 mb-6">
-          Utlizing <span className="bg-yellow p-1 rounded">PERIPHERAL</span>{" "}
-          VISION
-        </div>
-        <div className="mb-20">
-          <Image src={MarketingBanner} alt="" />
-        </div>
-        <div className="mb-10">
-          <Image src={MarketingGroup} alt="" />
-        </div>
-      </section>
       {/* paper sketch */}
       <section id="paper-sketch" className="mb-20">
-        <div className="font-30 font-bold mb-10">Paper Sketch</div>
+        <div className="font-30 font-bold mb-10">
+          <a aria-hidden="true" tabIndex="-1" id="paperSketch"></a>
+          Paper Sketch
+          <a href="#paperSketch" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div className="flex flex-wrap justify-around ">
           {paperSketchImgs?.map((src) => (
             <ImgBox key={src} src={src} aspectRatio={Number(0.56822)} />
@@ -156,7 +199,13 @@ export default function DigiCard() {
       </section>
       {/* wireframe */}
       <section id="wireframes">
-        <div className="font-30 font-bold mb-6">Wireframes</div>
+        <div className="font-30 font-bold mb-6">
+          <a aria-hidden="true" tabIndex="-1" id="wireframe"></a>
+          Wireframes
+          <a href="#wireframe" className="ml-2 hash-link">
+            #
+          </a>
+        </div>
         <div className="flex flex-wrap ">
           {wireframeImgs?.map((src) => (
             <ImgBox key={src} src={src} aspectRatio={Number(0.46223)} />

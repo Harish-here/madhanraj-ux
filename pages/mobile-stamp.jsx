@@ -3,6 +3,7 @@ import ThankYou from "../components/thank-you";
 import MobileStampBanner from "../public/mobile-stamp/mobile_stamp.webp";
 import MobileStampSheet from "../public/mobile-stamp/mobile_stamp_sheet.webp";
 import EmojiThink from "../public/mobile-stamp/thinking.svg";
+
 export default function MobileStamp() {
   return (
     <div id="mobile-stamp" className="flex flex-col w-full h-screen px-10">
