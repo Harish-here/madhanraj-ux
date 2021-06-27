@@ -16,10 +16,10 @@ const menuData = [
   },
   { label: "Mobile Stamp", path: "/mobile-stamp" },
   { label: "Hotel Booking App", path: "/hotel-app" },
-  { label: "Toucan", path: "/toucan" },
   { label: "Ellie Chat bot", path: "/ellie-chat-bot" },
   { label: "Old Brain Working", path: "/old-brain" },
   { label: "Expense App", path: "/visual-designs" },
+  { label: "Toucan", path: "/toucan" },
 ];
 const profileDescription = `An user cenetered designer with concerns for user problems.`;
 
