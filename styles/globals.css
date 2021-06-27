@@ -33,6 +33,12 @@ body {
 .bg-yellow {
   background-color: #f8e837;
 }
+.color-black {
+  color: var(--black);
+}
+.color-pale-blue {
+  color: var(--pale-blue);
+}
 /* font utility */
 .font-16 {
   font-size: 16px;
@@ -97,6 +103,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#home .img-box {
+  flex: 0 0 60%;
 }
 #mobile-stamp {
   color: var(--black);

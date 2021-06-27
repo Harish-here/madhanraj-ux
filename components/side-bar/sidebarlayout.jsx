@@ -11,8 +11,12 @@ import data from "./data";
 function SideBarLayout(props) {
   const { children, router } = props;
   const { menuData, profileDescription } = data;
-  const isCurrentRoute = (path) =>
-    router?.route === path || path === router?.asPath;
+  const isCurrentRoute = (path) => {
+    if (path === "/") {
+      return router?.route === path;
+    }
+    return router?.route === path || router?.asPath.includes(path);
+  };
   const activeMenuClass = `${style?.["menu-active"]} font-bold`;
   return (
     <div
@@ -25,7 +29,8 @@ function SideBarLayout(props) {
           <div className={`${style.avatar} my-2 relative`}>
             <Image src={avatar} alt="Profile picture" />
           </div>
-          <div className="text-sm mb-2"> {profileDescription}</div>
+          <div className="font-20 font-bold mb-2">S.M. Madhan Raj</div>
+          <div className="text-sm mb-2 text-center"> {profileDescription}</div>
         </div>
         {/* Menu */}
         <div className={`flex flex-col justify-start ${style.menu}`}>
@@ -61,7 +66,7 @@ function SideBarLayout(props) {
                     {subMenus?.map((menu) => (
                       <li
                         key={menu?.label}
-                        className={`flex items-center pl-2 pb-2 ${
+                        className={`flex items-baseline pl-2 pb-2 ${
                           style?.["sub-menu"]
                         } ${
                           isCurrentRoute(menu?.path)
@@ -91,7 +96,7 @@ function SideBarLayout(props) {
         {/* footer */}
         <div className={style.footer}>
           <div
-            className={`mb-2 transition-all ${
+            className={`mb-2 color-pale-blue transition-all ${
               isCurrentRoute("/about-me") ? activeMenuClass : ""
             }`}
           >

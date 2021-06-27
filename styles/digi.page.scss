@@ -1,6 +1,14 @@
 #digi-card-page {
   section {
     margin-bottom: 30px;
+    .hash-link {
+      display: none;
+    }
+    :hover {
+      .hash-link {
+        display: inline;
+      }
+    }
   }
   .page-heading {
     font-size: 40px;
