@@ -17,7 +17,9 @@ function MyApp({ Component, pageProps, router }) {
     <div className="w-full h-full">
       <Head>
         <title>
-          Madhanraj UX - {meta?.[router?.route.replace("/", "")]?.title}{" "}
+          {meta?.[router?.route.replace("/", "")]?.title}
+          {router?.route === "/" ? meta?.[router?.route]?.title : ""} -
+          Madhanraj UX
         </title>
         <meta name="description" content="Enjoy the Journey" />
         <link rel="icon" href="/favicon.webp" />
