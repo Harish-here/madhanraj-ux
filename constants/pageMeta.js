@@ -35,5 +35,9 @@ const pageMeta = {
     title: "Enjoy the Journey",
     description: "",
   },
+  "about-me": {
+    title: "About Me",
+    description: "",
+  },
 };
 export default pageMeta;

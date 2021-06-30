@@ -23,7 +23,12 @@ function SideBarLayout(props) {
       id="main"
       className="absolute inset-0 flex flex-row h-screen items-stretch text-base"
     >
-      <div id="side-bar" className="flex flex-col justify-between py-5 px-10">
+      <div
+        id="side-bar"
+        className={`flex flex-col justify-between py-5 px-10 ${
+          router.route === "/about-me" ? "hidden" : ""
+        }`}
+      >
         {/* Profile */}
         <div className="flex flex-col items-center">
           <div className={`${style.avatar} my-2 relative`}>
