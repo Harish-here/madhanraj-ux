@@ -26,6 +26,7 @@ function SideBarLayout(props) {
     toggleMobile(screenRef.current.offsetWidth < 1024);
   };
   useEffect(() => {
+    onResize();
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
