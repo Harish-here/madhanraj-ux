@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import "../styles/globals.css";
 import "../styles/digi.page.scss";
+import "../styles/about.page.scss";
 import SideBarLayout from "../components/side-bar";
 import meta from "../constants/pageMeta";
 import { withRouter } from "next/router";
