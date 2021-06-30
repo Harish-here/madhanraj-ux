@@ -6,7 +6,7 @@ export default function AboutMe() {
   return (
     <div id="about-me" className="flex flex-col w-full h-screen relative">
       <div
-        className="fixed top-16 left-14"
+        className="fixed top-16 left-14 cursor-pointer"
         style={{ width: "24px", height: "24px" }}
         onClick={() => window.history.back()}
       >

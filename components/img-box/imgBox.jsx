@@ -6,7 +6,7 @@ export default function ImgBox(props) {
   const [resultantHeight, setResultantHeight] = useState(minHeight || 0);
   const imageRef = useRef();
   const onResize = () => {
-    const width = imageRef.current.offsetWidth;
+    const width = imageRef?.current?.offsetWidth;
     setResultantHeight(Math.round(width / aspectRatio));
   };
   useEffect(() => {
