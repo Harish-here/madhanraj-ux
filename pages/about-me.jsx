@@ -42,8 +42,8 @@ export default function AboutMe() {
       </section>
       <section id="book" className="px-28 flex flex-col mb-28">
         <div className="font-24 mb-10">
-          Presenting my first copy of my book to my &ldquo;UX Guru&rdquo;,
-          Kingsley <small>(founder of UXMint)</small>
+          Presenting first copy of my book to my &ldquo;UX Guru&rdquo;, Kingsley{" "}
+          <small>(founder of UXMint)</small>
         </div>
         <div>
           <a
