@@ -6,13 +6,14 @@ import "../styles/about.page.scss";
 import SideBarLayout from "../components/side-bar";
 import meta from "../constants/pageMeta";
 import { withRouter } from "next/router";
-import { injectStyle } from "../utils";
+import { injectStyle, injectScriptGTM } from "../utils";
 
 function MyApp({ Component, pageProps, router }) {
   useEffect(() => {
     injectStyle(
       "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,900;1,400&display=swap"
     );
+    injectScriptGTM("https://www.googletagmanager.com/gtag/js?id=G-TWJCG7XR76");
   });
   return (
     <div className="w-full h-full">
