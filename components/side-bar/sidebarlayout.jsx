@@ -43,9 +43,8 @@ function SideBarLayout(props) {
         <>
           <div
             id="side-bar"
-            className={`flex flex-col justify-between py-5 px-10 ${
-              router.route === "/about-me" ? "hidden" : ""
-            }`}
+            className={`flex flex-col justify-between py-5 px-10 ${router.route === "/about-me" ? "hidden" : ""
+              }`}
           >
             {/* Profile */}
             <div className="flex flex-col items-center">
@@ -66,18 +65,16 @@ function SideBarLayout(props) {
                     <div className="flex justify-between">
                       <Link href={path}>
                         <a
-                          className={`transition-all ${
-                            isCurrentRoute(path) ? activeMenuClass : ""
-                          }`}
+                          className={`transition-all ${isCurrentRoute(path) ? activeMenuClass : ""
+                            }`}
                         >
                           {label}
                         </a>
                       </Link>
                       {subMenus?.length > 0 && (
                         <div
-                          className={`transition-all mr-2  ${
-                            isCurrentRoute(path) ? "rotate-90" : ""
-                          }`}
+                          className={`transition-all mr-2  ${isCurrentRoute(path) ? "rotate-90" : ""
+                            }`}
                         >
                           <Image src={downArrow} alt="down arrow" />
                         </div>
@@ -85,29 +82,25 @@ function SideBarLayout(props) {
                     </div>
                     {subMenus?.length > 0 && (
                       <ul
-                        className={`ml-2 mt-2 transition-all ${
-                          !isCurrentRoute(path) ? "hidden" : ""
-                        }`}
+                        className={`ml-2 mt-2 transition-all ${!isCurrentRoute(path) ? "hidden" : ""
+                          }`}
                       >
                         {subMenus?.map((menu) => (
                           <li
                             key={menu?.label}
-                            className={`flex items-baseline pl-2 pb-2 ${
-                              style?.["sub-menu"]
-                            } ${
-                              isCurrentRoute(menu?.path)
+                            className={`flex items-baseline pl-2 pb-2 ${style?.["sub-menu"]
+                              } ${isCurrentRoute(menu?.path)
                                 ? style?.["sub-menu-active"]
                                 : ""
-                            }`}
+                              }`}
                           >
                             <Link href={menu?.path}>
                               <a
                                 href={menu?.path}
-                                className={`transition-all ${
-                                  isCurrentRoute(menu?.path)
+                                className={`transition-all ${isCurrentRoute(menu?.path)
                                     ? activeMenuClass
                                     : ""
-                                }`}
+                                  }`}
                               >
                                 {menu?.label}
                               </a>
@@ -124,16 +117,15 @@ function SideBarLayout(props) {
             {/* footer */}
             <div className={style.footer}>
               <div
-                className={`mb-2 color-pale-blue transition-all ${
-                  isCurrentRoute("/about-me") ? activeMenuClass : ""
-                }`}
+                className={`mb-2 color-pale-blue transition-all ${isCurrentRoute("/about-me") ? activeMenuClass : ""
+                  }`}
               >
                 <Link href="/about-me">
                   <a>About Me</a>
                 </Link>
               </div>
               <div className="flex items-baseline">
-{/*                 <div className={style?.["behance-logo"]}>
+                {/*                 <div className={style?.["behance-logo"]}>
                   <a
                     href="https://www.behance.net/madhanrajUX"
                     rel="noreferrer"
@@ -142,7 +134,7 @@ function SideBarLayout(props) {
                     <Image src={behance} alt="Behance logo" />
                   </a>
                 </div> */}
-                <div className={`${style?.["linkedin-logo"]} ml-2`}>
+                <div className={`${style?.["linkedin-logo"]}`}>
                   <a
                     href="https://www.linkedin.com/in/madhan-raj-035317a6/"
                     rel="noreferrer"
