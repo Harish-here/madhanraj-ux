@@ -4,7 +4,7 @@ import Link from "next/link";
 import { withRouter } from "next/router";
 import style from "./sideBar.module.scss";
 import avatar from "../../public/avatar.webp";
-import behance from "../../public/behance_logo.webp";
+// import behance from "../../public/behance_logo.webp";
 import linkedin from "../../public/linkedin_logo.webp";
 import downArrow from "../../public/chev-down.svg";
 import MobileBanner from "../../public/mobile_banner.webp";
@@ -133,7 +133,7 @@ function SideBarLayout(props) {
                 </Link>
               </div>
               <div className="flex items-baseline">
-                <div className={style?.["behance-logo"]}>
+{/*                 <div className={style?.["behance-logo"]}>
                   <a
                     href="https://www.behance.net/madhanrajUX"
                     rel="noreferrer"
@@ -141,7 +141,7 @@ function SideBarLayout(props) {
                   >
                     <Image src={behance} alt="Behance logo" />
                   </a>
-                </div>
+                </div> */}
                 <div className={`${style?.["linkedin-logo"]} ml-2`}>
                   <a
                     href="https://www.linkedin.com/in/madhan-raj-035317a6/"
