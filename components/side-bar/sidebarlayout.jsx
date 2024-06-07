@@ -116,8 +116,8 @@ function SideBarLayout(props) {
                   </li>
                 ))}
               </ul>
-              <div className="font-16">
-                <a className='flex justify-between font-bold' href="https://rebrand.ly/madhan ">
+              <div className="font-14">
+                <a className='flex justify-between' href="https://rebrand.ly/madhan ">
                   <span>Official Works</span>
                   <span className="ml-2"><Image width={15} height={15} src={LinkImage} alt="portfolio" /></span></a>
               </div>
