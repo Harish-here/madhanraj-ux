@@ -10,6 +10,7 @@ import downArrow from "../../public/chev-down.svg";
 import MobileBanner from "../../public/mobile_banner.webp";
 import data from "./data";
 import ImgBox from "../img-box";
+import LinkImage from './link.svg';
 
 function SideBarLayout(props) {
   const { children, router } = props;
@@ -43,9 +44,8 @@ function SideBarLayout(props) {
         <>
           <div
             id="side-bar"
-            className={`flex flex-col justify-between py-5 px-10 ${
-              router.route === "/about-me" ? "hidden" : ""
-            }`}
+            className={`flex flex-col justify-between py-5 px-10 ${router.route === "/about-me" ? "hidden" : ""
+              }`}
           >
             {/* Profile */}
             <div className="flex flex-col items-center">
@@ -66,18 +66,16 @@ function SideBarLayout(props) {
                     <div className="flex justify-between">
                       <Link href={path}>
                         <a
-                          className={`transition-all ${
-                            isCurrentRoute(path) ? activeMenuClass : ""
-                          }`}
+                          className={`transition-all ${isCurrentRoute(path) ? activeMenuClass : ""
+                            }`}
                         >
                           {label}
                         </a>
                       </Link>
                       {subMenus?.length > 0 && (
                         <div
-                          className={`transition-all mr-2  ${
-                            isCurrentRoute(path) ? "rotate-90" : ""
-                          }`}
+                          className={`transition-all mr-2  ${isCurrentRoute(path) ? "rotate-90" : ""
+                            }`}
                         >
                           <Image src={downArrow} alt="down arrow" />
                         </div>
@@ -85,29 +83,25 @@ function SideBarLayout(props) {
                     </div>
                     {subMenus?.length > 0 && (
                       <ul
-                        className={`ml-2 mt-2 transition-all ${
-                          !isCurrentRoute(path) ? "hidden" : ""
-                        }`}
+                        className={`ml-2 mt-2 transition-all ${!isCurrentRoute(path) ? "hidden" : ""
+                          }`}
                       >
                         {subMenus?.map((menu) => (
                           <li
                             key={menu?.label}
-                            className={`flex items-baseline pl-2 pb-2 ${
-                              style?.["sub-menu"]
-                            } ${
-                              isCurrentRoute(menu?.path)
+                            className={`flex items-baseline pl-2 pb-2 ${style?.["sub-menu"]
+                              } ${isCurrentRoute(menu?.path)
                                 ? style?.["sub-menu-active"]
                                 : ""
-                            }`}
+                              }`}
                           >
                             <Link href={menu?.path}>
                               <a
                                 href={menu?.path}
-                                className={`transition-all ${
-                                  isCurrentRoute(menu?.path)
-                                    ? activeMenuClass
-                                    : ""
-                                }`}
+                                className={`transition-all ${isCurrentRoute(menu?.path)
+                                  ? activeMenuClass
+                                  : ""
+                                  }`}
                               >
                                 {menu?.label}
                               </a>
@@ -115,25 +109,30 @@ function SideBarLayout(props) {
                           </li>
                         ))}
                       </ul>
+
                     )}
                   </li>
                 ))}
               </ul>
+              <div className="font-16">
+                <a className='flex justify-between font-bold' href="https://rebrand.ly/madhan ">
+                  <span>Official Works</span>
+                  <span className="ml-2"><Image width={15} height={15} src={LinkImage} alt="portfolio" /></span></a>
+              </div>
             </div>
             <hr className="mb-2" />
             {/* footer */}
             <div className={style.footer}>
               <div
-                className={`mb-2 color-pale-blue transition-all ${
-                  isCurrentRoute("/about-me") ? activeMenuClass : ""
-                }`}
+                className={`mb-2 color-pale-blue transition-all ${isCurrentRoute("/about-me") ? activeMenuClass : ""
+                  }`}
               >
                 <Link href="/about-me">
                   <a>About Me</a>
                 </Link>
               </div>
               <div className="flex items-baseline">
-{/*                 <div className={style?.["behance-logo"]}>
+                {/*                 <div className={style?.["behance-logo"]}>
                   <a
                     href="https://www.behance.net/madhanrajUX"
                     rel="noreferrer"
